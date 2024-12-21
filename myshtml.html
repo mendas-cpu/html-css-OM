@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title> Team Apply </title>
+</head>
+<body>
+    <header >
+        <h1>Team Apply Form</h1>
+    </header>
+    <hr>
+    <main>
+        <form action="index.php" method="post" >
+            <label for="username"> Username:</label>
+            <input type="text" id="username" placeholder="Ex:Abcde123" minlength="6" maxlength="16" required>
+            <br>
+            <label for="password"> Password: </label>
+            <input type="password" id="password" minlength="8" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Abcde123@gmail.com">
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="213-7777777777" pattern="[0-9]{10}" required>
+            <br>
+            <label for="bdate">Birthdate</label>
+            <input type="date" id="bdate" required>
+            <br>
+            <label>Gender:</label>
+            <select  required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <label for="grade">Grade:</label>
+            <label for="L1">L1</label>
+            <input type="radio" id="L1" value="L1" name="grade">
+            <label for="L2">L2</label>
+            <input type="radio" id="L2" value="L2" name="grade">
+            <label for="'L3">L3</label>
+            <input type="radio" id="L3" value="L3" name="grade">
+            <label for="M1">M1</label>
+            <input type="radio" id="M1" value="M1" name="grade">
+            <label for="M2">M2</label>
+            <input type="radio" id="M2" value="M2" name="grade">
+            <label for="phd">Phd</label>
+            <input type="radio" id="phd" value="Phd" name="grade"><br>
+            <label for="wcyd">What Can You Add?</label>
+            <textarea id="wcyd"></textarea><br>
+
+            <input type="reset"><br>
+            <input type="submit" >
+            
+        </form>
+    </main>
+    
+    <footer>
+            <hr>
+            By Omar Mendas<br>
+            &copy;All Rights Reserved 
+    </footer>
+</body>
